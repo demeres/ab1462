@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Listagem</title>
+
+</head>
+<body>
+    <h1>Cadastro de Cliente</h1>
+
+    {% for i in dados %}
+    {{ i.nome }}<br>
+        {{ i.email }}<br>
+        {{ i.endereco }}<br>
+    ------------------<br>
+    {% endfor %}
+
+<button onclick="location.href = '{% url 'url_principal' %}'">Home</button>
+</body>
+</html>
